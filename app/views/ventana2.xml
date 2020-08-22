@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<Button id='botonCerrar'></Button>
+		<TextField id='inputWeb'></TextField>
+		<Button id='botonWeb'></Button>
+		<WebView id='web'></WebView>
+	</Window>
+</Alloy>

@@ -1,0 +1,26 @@
+".container": {
+	backgroundColor:"red",
+	// height: 100,
+	// width: 100,
+	borderColor: 'black',
+	borderWidth: 5,
+	borderRadius: 30,
+	// left: 10,
+	// top: 50,
+	layout: 'vertical'
+}
+'#viewImage': {
+	backgroundColor: 'blue',
+	height: 100,
+	width: 100,
+	top: 50,
+	// left: 30,
+	backgroundImage: 'https://eloutput.com/app/uploads-eloutput.com/2019/02/android-png-vulnerabilidad.jpg'
+}
+'#boton': {
+	top :20,
+	borderColor: 'black',
+	height: 50,
+	width: 150,
+	title: 'ventana 2',
+}
