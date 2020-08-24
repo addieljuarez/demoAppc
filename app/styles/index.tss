@@ -24,3 +24,10 @@
 	width: 150,
 	title: 'ventana 2',
 }
+'#botonWinImage': {
+    top: 20,
+    height: 50,
+    width: 150,
+    title: 'Windows image',
+    borderColor: 'black'
+}

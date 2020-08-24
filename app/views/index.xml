@@ -1,6 +1,7 @@
 <Alloy>
 	<Window class="container" id='ventana'>
 		<Button id='boton'></Button>
+		<Button id='botonWinImage'></Button>
 		<ImageView height="100" width="100" top="50" backgroundColor="green" image="https://i.blogs.es/2b63f8/androidze/1366_2000.jpg"></ImageView>
 		<View id="viewImage"></View>
 		<View id='viewImage2'></View>

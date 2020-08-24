@@ -73,3 +73,9 @@ $.boton.addEventListener('click', function(e){
 	// var windows2_demo = Alloy.createController('ventana2_demo');
 	// windows2_demo.openWindows();
 });
+
+
+$.botonWinImage.addEventListener('click', function(e){
+	var winImage = Alloy.createController('winImage').getView();
+	winImage.open();
+});

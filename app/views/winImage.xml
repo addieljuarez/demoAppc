@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container">
+		<ScrollView id='viewScroll'>
+			<ImageView id='imageLocal'></ImageView>
+			<ImageView id='imageRemote'></ImageView>
+			<ImageView id='imageGallery'></ImageView>
+		</ScrollView>
+	</Window>
+</Alloy>
