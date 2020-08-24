@@ -31,3 +31,10 @@
     title: 'Windows image',
     borderColor: 'black'
 }
+'#botonJSON': {
+	top: 20,
+    height: 50,
+    width: 150,
+    title: 'Windows JSON',
+    borderColor: 'black'
+}

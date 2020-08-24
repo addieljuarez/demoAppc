@@ -79,3 +79,8 @@ $.botonWinImage.addEventListener('click', function(e){
 	var winImage = Alloy.createController('winImage').getView();
 	winImage.open();
 });
+
+
+$.botonJSON.addEventListener('click', function(e){
+	Alloy.createController('winJson').getView().open();
+});

@@ -1,0 +1,31 @@
+
+".container" : {
+    backgroundColor: 'white',
+    layout: 'vertical'
+},
+'#demoCallback': {
+    top: 30,
+    width: 150,
+    height: 50,
+    title: 'demo callback',
+    borderColor: 'black'
+},
+'#demoArgument': {
+    top: 30,
+    width: 150,
+    height: 50,
+    title: 'arguments',
+    borderColor: 'black'
+}
+'#demoJSON': {
+    top: 30,
+    width: 150,
+    height: 50,
+    title: 'JSON',
+    borderColor: 'black'
+}
+'#textoresult': {
+    color: 'black',
+    top: 30,
+    text: 'sin resultado',
+}
