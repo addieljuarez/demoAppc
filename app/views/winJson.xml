@@ -1,8 +1,10 @@
 <Alloy>
 	<Window class="container">
-		<Button id='demoCallback'></Button>
-		<Button id='demoArgument'></Button>
-		<Button id='demoJSON'></Button>
-		<Label id="textoresult"></Label>
+		<ScrollView id='viewMain'>
+			<Button id='demoCallback'></Button>
+			<Button id='demoArgument'></Button>
+			<Button id='demoJSON'></Button>
+			<Label id="textoresult"></Label>
+		</ScrollView>
 	</Window>
 </Alloy>

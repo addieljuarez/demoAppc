@@ -15,7 +15,7 @@ function pedirDinero(_callback){
 
 function revisarFondos(_callback){
     Ti.API.info('entra a la funcion revisar fondos y de espera 3 segundo');
-    setTimeout(() => {
+    setTimeout(function() {
         _callback('revisar fondos');
         entregarDinero(_callback);
     }, 3000);
@@ -24,7 +24,7 @@ function revisarFondos(_callback){
 
 function entregarDinero(_callback){
     Ti.API.info('entra a la funcion Entregar dinero  y de espera 3 segundo');
-    setTimeout(() => {
+    setTimeout(function(){
         _callback('entregar dinero');
     }, 3000);
 }
@@ -60,17 +60,66 @@ $.demoArgument.addEventListener('click', function(e){
 
 $.demoJSON.addEventListener('click', function(e){
 
-    var url = 'https://gist.githubusercontent.com/gcollazo/884a489a50aec7b53765405f40c6fbd1/raw/49d1568c34090587ac82e80612a9c350108b62c5/sample.json';
+    var url = 'https://gist.githubusercontent.com/addieljuarez/80f0b6f39ec98e8e8533eb445158f642/raw/7435b40d4da1b1e92a5bce47a4e1d80ca8b081da/demo.json';
     var cliente = Ti.Network.createHTTPClient({
         onload: function(){
-            alert('entro al onload');
+            // alert('entro al onload');
             Ti.API.info(this.responseText);
-            $.textoresult.text = this.responseText;
+            // $.textoresult.text = this.responseText;
+
+            var objJson = JSON.parse(this.responseText);
+
+            $.textoresult.text = 'numero de elementos: ' + objJson.length;
+
+            // inicio
+            // limite
+            // avance
+
+
+            for(var i=0; i<objJson.length; i++){
+                var viewRow = Ti.UI.createView({
+                    // height: 50,
+                    height: Ti.UI.SIZE,
+                    width: Ti.UI.FILL,
+                    borderColor: 'blue',
+                    borderWidth: 2,
+                    top: 5
+                });
+    
+                $.viewMain.add(viewRow);
+
+                var titleRow = Ti.UI.createLabel({
+                    height: Ti.UI.SIZE,
+                    left: 20,
+                    color: 'red',
+                    text: objJson[i].arg ,
+                });
+                viewRow.add(titleRow);
+
+                var iconoRow = Ti.UI.createImageView({
+                    height: 50,
+                    width: 50,
+                    // height: Ti.UI.SIZE,
+                    // width: 80,
+                    right: 30,
+                    image: objJson[i].imagen,
+                    borderColor: 'black',
+                    borderWidth: 2,
+                    borderRadius: 25,
+                });
+                viewRow.add(iconoRow);
+
+            }
+
+            
+
+
+
         },
         onerror: function(e){
-            alert(e.error);
+            alert('el error es: ' + e.error);
         },
-        timeout: 5000,
+        timeout: 10000,
 
     });
     cliente.open('GET', url);

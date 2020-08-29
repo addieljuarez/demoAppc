@@ -1,21 +1,30 @@
 
 ".container" : {
     backgroundColor: 'white',
-    layout: 'vertical'
+    // layout: 'vertical'
 },
+'#viewMain':{
+    layout: 'vertical',
+    left: 10,
+    right: 10,
+    borderColor: 'red',
+    borderWidth: 1
+}
 '#demoCallback': {
     top: 30,
     width: 150,
     height: 50,
     title: 'demo callback',
-    borderColor: 'black'
+    borderColor: 'black',
+    left: 20,
 },
 '#demoArgument': {
     top: 30,
     width: 150,
     height: 50,
     title: 'arguments',
-    borderColor: 'black'
+    borderColor: 'black',
+    right: 20
 }
 '#demoJSON': {
     top: 30,
@@ -28,4 +37,7 @@
     color: 'black',
     top: 30,
     text: 'sin resultado',
+    height: Ti.UI.SIZE,
+    left: 10,
+    right: 10,
 }
